@@ -54,3 +54,12 @@ function addNum(x, y) {
     return x + y;
 }
 console.log(addNum(3, 5));
+// Void
+function log(message) {
+    console.log(message);
+}
+log("Hello World");
+const user1 = {
+    id: 1,
+    name: "John",
+};

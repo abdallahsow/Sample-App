@@ -73,3 +73,22 @@ function addNum(x: number, y: number): number {
 }
 
 console.log(addNum(3, 5));
+
+// Void
+function log(message: string | number): void {
+  console.log(message);
+}
+
+log("Hello World");
+
+// Interfaces
+interface UserInterface {
+    readonly id: number;
+    name: string;
+    age?: number;
+}
+
+const user1: UserInterface = {
+    id: 1,
+    name: "John",
+}
