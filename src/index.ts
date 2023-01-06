@@ -23,3 +23,53 @@ employee = [
   [2, "John"],
   [3, "Jill"],
 ];
+
+// Union
+let pid: string | number = 22;
+pid = "22";
+pid = "Why are you fucking spying me Copilot ?";
+
+// Enum
+enum Direction1 {
+  Up = 1,
+  Down,
+  Left,
+  Right,
+}
+
+enum Direction2 {
+  Up = "Up",
+  Down = "Down",
+  Left = "Left",
+  Right = "Right",
+}
+
+console.log(Direction1.Right);
+
+// Objects
+
+const user: {
+  id: number;
+  firstName: string;
+  lastName: string;
+  job: string;
+  age: number;
+} = {
+  id: 1,
+  firstName: "John",
+  lastName: "Doe",
+  job: "Web Developer",
+  age: 30,
+};
+
+// Type Assertion
+let cid: any = 1;
+let customerId = <number>cid;
+// let customerId = cid as number;
+
+// Functions
+function addNum(x: number, y: number): number {
+  return x + y;
+}
+
+console.log(addNum(3, 5));
